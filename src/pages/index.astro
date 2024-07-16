@@ -2,18 +2,16 @@
 import MainLayout from "@/layouts/MainLayout.astro";
 import Image from "astro/components/Image.astro";
 
-import drawers from "@/assets/drawers.jpg";
 import avatar from "@/assets/avatar-michelle.jpg";
+import share from "@/assets/icon-share.svg";
 ---
 
 <MainLayout title="Frontend Mentor | Article Preview Component">
   <div class="flex h-[280px] w-[720px] rounded-xl bg-white">
-    <Image
-      src={drawers}
-      alt="Drawers"
-      loading={"eager"}
-      class="w-[285px] rounded-l-xl"
-    />
+    <div
+      class="h-[280px] w-[800px] rounded-l-xl bg-[url('/src/assets/drawers.jpg')] bg-cover bg-left"
+    >
+    </div>
     <div class="px-10 py-8">
       <h1
         class="text-[1.3rem] font-medium leading-snug text-sad-very-dark-grayish-blue"
@@ -21,19 +19,32 @@ import avatar from "@/assets/avatar-michelle.jpg";
         Shift the overall look and feel by adding these wonderful touches to
         furniture in your home
       </h1>
-      <p class="mt-4 text-sad-desaturated-dark-blue">
+      <p class="mt-3 text-sad-desaturated-dark-blue">
         Ever been in a room and felt like something was missing? Perhhaps it
         felt slightly bare and uninviting. I've got some simple tips to help you
         make any room feel complete.
       </p>
-      <div class="mt-6 flex">
-        <Image
-          src={avatar}
-          alt="Michelle Appleton"
-          loading={"eager"}
-          class="rounded-full"
-          width={"40"}
-        />
+      <div class="mt-5 flex items-center gap-3">
+        <div class="flex-none">
+          <Image
+            src={avatar}
+            alt="Michelle Appleton"
+            loading="eager"
+            class="rounded-full"
+            width="40"
+          />
+        </div>
+        <div class="flex-initial">
+          <p class="font-bold text-sad-very-dark-grayish-blue">
+            Michelle Appleton
+          </p>
+          <p class="text-sad-grayish-blue">28 Jun 2020</p>
+        </div>
+        <div class="flex flex-1 justify-end">
+          <div class="rounded-full bg-sad-light-grayish-blue p-2">
+            <Image src={share} alt="Share with social sites" loading="eager" />
+          </div>
+        </div>
       </div>
     </div>
   </div>
