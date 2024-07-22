@@ -11,7 +11,7 @@ import pinterest from "@/assets/icon-pinterest.svg";
 
 <MainLayout title="Frontend Mentor | Article Preview Component">
   <div
-    class="flex h-[520px] w-[330px] flex-col rounded-xl bg-white shadow-sm md:h-[280px] md:w-[720px] md:flex-row"
+    class="relative flex h-[520px] w-[330px] flex-col rounded-xl bg-white shadow-sm md:h-[280px] md:w-[720px] md:flex-row"
   >
     <div
       class="h-[520px] w-[330px] rounded-t-xl bg-[url('/src/assets/drawers.jpg')] bg-cover bg-left md:h-[280px] md:w-[840px] md:rounded-l-xl md:rounded-r-none"
@@ -31,7 +31,7 @@ import pinterest from "@/assets/icon-pinterest.svg";
         felt slightly bare and uninviting. I've got some simple tips to help you
         make any room feel complete.
       </p>
-      <div class="relative mt-5 flex items-center gap-3">
+      <div class="mt-5 flex items-center gap-3">
         <div class="flex-none">
           <Image
             src={avatar}
@@ -57,35 +57,35 @@ import pinterest from "@/assets/icon-pinterest.svg";
             />
           </div>
         </div>
-        <div
-          class="absolute hidden h-14 w-[244px] items-center gap-4 rounded-xl bg-sad-very-dark-grayish-blue px-9 md:bottom-14 md:left-[204px]"
-          id="popup"
-        >
-          <p class="uppercase tracking-[.45em] text-sad-grayish-blue">Share</p>
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            referrerpolicy="no-referrer"
-          >
-            <Image src={facebook} alt="Facebook" loading={"lazy"} />
-          </a>
-          <a href="https://x.com" target="_blank" referrerpolicy="no-referrer">
-            <Image src={twitter} alt="Twitter" loading={"lazy"} />
-          </a>
-          <a
-            href="https://pinterest.com"
-            target="_blank"
-            referrerpolicy="no-referrer"
-          >
-            <Image src={pinterest} alt="Pinterest" loading={"lazy"} />
-          </a>
-          <div
-            class="absolute bottom-0 left-1/2 hidden h-0 w-0 -translate-x-1/2 translate-y-full transform border-l-[10px] border-r-[10px] border-t-[10px] border-l-transparent border-r-transparent border-t-sad-very-dark-grayish-blue md:block"
-          >
-          </div>
-        </div>
       </div>
     </article>
+    <div
+      class="absolute bottom-0 hidden h-14 w-[244px] items-center gap-4 rounded-b-xl bg-sad-very-dark-grayish-blue px-9 md:-right-16 md:bottom-24 md:rounded-xl"
+      id="popup"
+    >
+      <p class="uppercase tracking-[.45em] text-sad-grayish-blue">Share</p>
+      <a
+        href="https://facebook.com"
+        target="_blank"
+        referrerpolicy="no-referrer"
+      >
+        <Image src={facebook} alt="Facebook" loading={"lazy"} />
+      </a>
+      <a href="https://x.com" target="_blank" referrerpolicy="no-referrer">
+        <Image src={twitter} alt="Twitter" loading={"lazy"} />
+      </a>
+      <a
+        href="https://pinterest.com"
+        target="_blank"
+        referrerpolicy="no-referrer"
+      >
+        <Image src={pinterest} alt="Pinterest" loading={"lazy"} />
+      </a>
+      <div
+        class="absolute bottom-0 left-1/2 hidden h-0 w-0 -translate-x-1/2 translate-y-full transform border-l-[10px] border-r-[10px] border-t-[10px] border-l-transparent border-r-transparent border-t-sad-very-dark-grayish-blue md:block"
+      >
+      </div>
+    </div>
   </div>
 </MainLayout>
 
