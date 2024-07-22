@@ -26,6 +26,7 @@ Users should be able to:
 - See the social media share links when they click the share icon
 
 ### Screenshot
+![article-preview-card](https://github.com/user-attachments/assets/ecd50423-b21f-4799-8a00-0da8baa12805)
 
 ### Links
 
