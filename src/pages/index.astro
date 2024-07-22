@@ -11,20 +11,22 @@ import pinterest from "@/assets/icon-pinterest.svg";
 
 <MainLayout title="Frontend Mentor | Article Preview Component">
   <div
-    class="flex h-[520px] w-[340px] flex-col rounded-xl bg-white md:h-[280px] md:w-[720px] md:flex-row"
+    class="flex h-[520px] w-[340px] flex-col rounded-xl bg-white shadow-sm md:h-[280px] md:w-[720px] md:flex-row"
   >
     <div
-      class="h-[520px] w-[340px] rounded-t-xl bg-[url('/src/assets/drawers.jpg')] bg-cover md:h-[280px] md:w-[840px] md:rounded-l-xl md:bg-left"
+      class="h-[520px] w-[340px] rounded-t-xl bg-[url('/src/assets/drawers.jpg')] bg-cover bg-left md:h-[280px] md:w-[840px] md:rounded-l-xl md:rounded-r-none"
     >
     </div>
-    <div class="px-10 py-8">
+    <article class="px-8 py-8 pb-5 md:px-10">
       <h1
-        class="text-[1.3rem] font-medium leading-snug text-sad-very-dark-grayish-blue"
+        class="text-[1.1rem] font-medium leading-snug text-sad-very-dark-grayish-blue md:text-[1.3rem]"
       >
         Shift the overall look and feel by adding these wonderful touches to
         furniture in your home
       </h1>
-      <p class="mt-3 text-sad-desaturated-dark-blue">
+      <p
+        class="mt-3 text-[0.9rem] text-sad-desaturated-dark-blue md:text-[13px]"
+      >
         Ever been in a room and felt like something was missing? Perhhaps it
         felt slightly bare and uninviting. I've got some simple tips to help you
         make any room feel complete.
@@ -89,7 +91,7 @@ import pinterest from "@/assets/icon-pinterest.svg";
           </div>
         </div>
       </div>
-    </div>
+    </article>
   </div>
 </MainLayout>
 
