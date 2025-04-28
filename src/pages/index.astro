@@ -9,7 +9,10 @@ import facebook from "@/assets/icon-facebook.svg";
 import pinterest from "@/assets/icon-pinterest.svg";
 ---
 
-<MainLayout title="Frontend Mentor | Article Preview Component">
+<MainLayout
+  title="Frontend Mentor | Article Preview Component"
+  description="A article preview component challenge from Frontend Mentor."
+>
   <main class="flex min-h-screen items-center justify-center">
     <div
       class="relative flex h-[505px] w-[330px] flex-col rounded-xl bg-white shadow-xs md:h-[280px] md:w-[720px] md:flex-row"
@@ -20,7 +23,7 @@ import pinterest from "@/assets/icon-pinterest.svg";
       </div>
       <article class="px-8 py-8 pb-2 md:px-10">
         <h1
-          class="text-theme-very-dark-grayish-blue text-[1rem] font-bold leading-snug md:text-[1.25rem]"
+          class="text-theme-very-dark-grayish-blue text-[1rem] leading-snug font-bold md:text-[1.25rem]"
         >
           Shift the overall look and feel by adding these wonderful touches to
           furniture in your home
@@ -64,7 +67,7 @@ import pinterest from "@/assets/icon-pinterest.svg";
         class="bg-theme-very-dark-grayish-blue absolute bottom-0 hidden h-16 w-full items-center gap-4 rounded-b-xl px-9 md:-right-16 md:bottom-24 md:h-14 md:w-[244px] md:rounded-xl"
         id="popup"
       >
-        <p class="text-theme-grayish-blue uppercase tracking-[.45em]">Share</p>
+        <p class="text-theme-grayish-blue tracking-[.45em] uppercase">Share</p>
         <a
           href="https://facebook.com"
           target="_blank"
@@ -83,7 +86,7 @@ import pinterest from "@/assets/icon-pinterest.svg";
           <Image src={pinterest} alt="Pinterest" loading={"lazy"} />
         </a>
         <div
-          class="border-t-theme-very-dark-grayish-blue absolute bottom-0 left-1/2 hidden h-0 w-0 -translate-x-1/2 translate-y-full transform border-l-[10px] border-r-[10px] border-t-[10px] border-l-transparent border-r-transparent md:block"
+          class="border-t-theme-very-dark-grayish-blue absolute bottom-0 left-1/2 hidden h-0 w-0 -translate-x-1/2 translate-y-full transform border-t-[10px] border-r-[10px] border-l-[10px] border-r-transparent border-l-transparent md:block"
         >
         </div>
       </div>
