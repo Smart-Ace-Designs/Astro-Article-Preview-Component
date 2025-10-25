@@ -8,21 +8,3 @@
 
   --font-manrope: Manrope, sans-serif;
 }
-
-@layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
-}
-
-@font-face {
-  font-family: "Manrope";
-  font-style: normal;
-  font-weight: 500 700;
-  src: url("/fonts/Manrope-VariableFont_wght.ttf") format("truetype");
-  font-display: swap;
-}
