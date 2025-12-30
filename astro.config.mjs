@@ -16,6 +16,7 @@ export default defineConfig({
         name: "Manrope",
         cssVariable: "--font-manrope",
         weights: [400, 700],
+        styles: ["normal"],
       },
     ],
   },
